@@ -1,3 +1,12 @@
+##To use DataIngest
+
+To execute this script do the following:
+1) Run requirement.txt to add dependencies need to run dataIngest.
+2) Run with command “python mydataIngest -p <path of csv path> -o <read/write>”
+
+
+## To run Daas
+
 Prerequisites
 1) Lunix OS
 2) Python3
