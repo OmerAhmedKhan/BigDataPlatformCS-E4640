@@ -1,48 +1,36 @@
+##To use DataIngest
+
+To execute this script do the following:
+1) Run requirement.txt to add dependencies need to run dataIngest.
+2) Run with command “python mydataIngest -p <path of csv path> -o <read/write>”
+
+
+## To run Daas
+
 Prerequisites
 1) Lunix OS
 2) Python3
 3) Curl (if executing web service endpoint from terminal)
-3) Terminal or web browser
+4) Terminal or web browser
 
 
 Please follow below instruction to create a local server for webservices:
 
 1) Open Lunix terminal
-2) Copy TruecallerTestE directory to /home/<user> (current user of the lunix) path.
-3) Go to TruecallerTestE directory (NOTE: TruecallerTestE is for Efficient)
+2) Copy bigdata directory to /home/<user> (current user of the lunix) path.
+3) Go to bigdata directory
 4) Execute bash script "playIt.sh"
 5) And Boom your web server is deployed on localhost
-6) To check status of webservice execute "curl http://127.0.0.1:5000/status"
-7) To unit test go to TruecallerTestE directory and run "python3 test.py", all test cases should pass.
+6) To check the status of web services(API) execute "curl http://127.0.0.1:5000/status"
 
 Following are the endpoints and their arguments:
 
 1)/status/
 To check the status of a web server
 
+2)/read/<recordCount>
+Get records w.r.t count, to get all provide “0”
 
-2)/urlShortner/url=<add vaild url>
-Arguments: url
-Expanation: Shorten the URL
-
-Example:
-/urlShortner/?url=http://www.google.com
-Result:
-http://127.0.0.1:5000/urlUnShortner/Ze
-
-
-3)/urlUnShortner/<hash>
-Arguments: hash
-Expanation: redirect to orginal URL which is associated with provided hash
-
-Example:
-/urlUnShortner/Ze
-Result:
-Content of http://www.google.com
-
-
-NOTE:
-
-As the instruction permits in-memory storage thus applied Sqlite3 memory feature wich is more efficient error prone.
-By using sqllite3 Library it will provide better indexing and serach capability plus a better memory management.
-Plus Sqlite3 also handles multithreading but to be more carefull I still go with Lock on writing into memory
+3)/write/
+Create a record, allowed fields are as follows:
+['app', 'category', 'rating', 'reviews', 'size', 'installs', 'type', 'price', 'content_rating', 'genres', 'last_updated', ‘'current_ver', 'android _ver']
