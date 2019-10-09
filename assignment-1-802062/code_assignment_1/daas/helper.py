@@ -19,7 +19,7 @@ def write_csv_to_db(client, path):
     for column in df.columns:
         if column not in fields:
             print('Schema error')
-            sys.exit()
+            return False
 
     records = json.loads(df.T.to_json()).values()
     try:

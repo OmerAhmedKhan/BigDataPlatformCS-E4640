@@ -3,7 +3,7 @@ from flask import Flask
 from flask_restful import Resource, Api
 from flask_restful import request
 from flask import jsonify
-from dataIngestion.helper import read_db, write_to_db
+from helper import read_db, write_to_db
 
 logging.basicConfig(filename='error.log',level=logging.ERROR)
 from pymongo import MongoClient

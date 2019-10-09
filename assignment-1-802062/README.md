@@ -5,23 +5,27 @@ All the structure is same as the template, the only directory and execution need
 
 ### Code
 
+Change the name of directory of code to code_assignment_1, because python code have reserve keyword for code and it wont run the application
 Directory is as follows:
 
-* daas
-    * api.py
-    * setup.py
-    * helper.py
-    * playit.sh
-    * testmydaas.py
-    * error.log
-    * __init__.py
-   
-* dataIngestion
-    * mydataingest.py
-    * testmydataingest.py
-    * requirement.txt
-    * helper.py
-    
+* code_assignment_1
+* __init__.py
+    * daas
+        * api.py
+        * setup.py
+        * helper.py
+        * playit.sh
+        * testmydaas.py
+        * error.log
+        * __init__.py
+       
+    * dataIngestion
+        * __init__.py
+        * mydataingest.py
+        * testmydataingest.py
+        * requirement.txt
+        * helper.py
+        
 
 ###### To execute dataIngestion:
 
