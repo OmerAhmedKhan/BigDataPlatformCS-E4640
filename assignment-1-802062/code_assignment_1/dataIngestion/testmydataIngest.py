@@ -15,7 +15,7 @@ client = MongoClient('34.69.192.142', 27017, username='root', password='FoSezeYi
 path = "../../data/googleplaystore.csv"
 
 tic = time.clock()
-read_db(client)
+write_csv_to_db(client, path)
 toc = time.clock()
 logging.info("Time to execute read from dataingestion is: {}".format(toc-tic))
 print(toc-tic)

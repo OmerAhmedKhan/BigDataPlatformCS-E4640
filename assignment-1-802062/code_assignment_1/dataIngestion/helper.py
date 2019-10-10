@@ -15,14 +15,13 @@ fields = ['App', 'Category', 'Rating', 'Reviews', 'Size', 'Installs', 'Type',
 
 def read_db(client, is_id=True, count=0):
     db = client.mydb
-    cursor = db.apps.find({}, {'_id': is_id}).limit(count)
+    cursor = db.things.find({}, {'_id': is_id}).limit(count)
     return list(cursor)
 
 
 def write_csv_to_db(client, path):
     db = client.mydb
     df = pd.read_csv(path)
-    print(df.columns)
     for column in df.columns:
         if column not in fields:
             logging.error('Schema error')

@@ -298,5 +298,3 @@
 14:44:30, 19505 978 root INFO Time to execute read from dataingestion is: 0.09985999999999995
 14:44:31, 19489 203 root INFO Time to execute read from dataingestion is: 0.057978000000000085
 14:44:31, 19516 735 root INFO Time to execute read from dataingestion is: 0.06161400000000006
-15:02:05, 21583 744 root INFO Time to execute read from dataingestion is: 0.6987749999999999
-15:02:32, 21637 909 root INFO Time to execute read from dataingestion is: 0.7099410000000002

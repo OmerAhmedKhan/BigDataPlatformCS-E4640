@@ -29,17 +29,17 @@ Directory is as follows:
 
 ###### To execute dataIngestion:
 
-First install requirements form requirement.txt:
+First go to **dataIngestion** folder install requirements form requirement.txt:
 ```commandline
 pip install -r requirement.txt
 ```
 
-* To write:
+* To write execute:
 ```python
 python3 mydataingest.py --path "<path to csv>" --operation w
 ```
 
-* To read:
+* To read execute:
 ```python
 python3 mydataingest.py --operation r
 ```
