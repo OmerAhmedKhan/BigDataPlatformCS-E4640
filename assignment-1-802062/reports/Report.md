@@ -15,19 +15,18 @@ The graph shows flat results because of the parallel process and usage of batch 
 
 The following graphs will show the load on CPU and Disk of CoreDms:
 
- ![WriteCPUPeak](WriteCPUPeak.png "WriteCPUPeak")
- ![WriteDiskIO](WriteDiskIO.png "WriteDiskIO")
+ ![WriteCPUPeak](writeCPU.png "WriteCPUPeak")
+ ![WriteDiskIO](writeDisk.png "WriteDiskIO")
  
-With more than 100 processes for writing grom DataIngest to forms, some of the process failed due to the following warning:
+With more than 100 processes for writing from DataIngest, some of the process failed due to the following warning:
 
 ```
-The master 0 ran at 100% CPU utilization.
+The master 0 ran at 300% CPU utilization.
 ```
 
+Due to high utilization of CPU, the process start to stackup which impact my remote machine as they are getting pile up it take up my resources and on cloud the VM start to take a load which is distributed among replicas but still not enough to handle incoming traffic
 
-Which results in 500 error from CoreDms for several DataIngest processes.
-
-
+While for reading (base record counts of CSV), we can see that it didn't effect much because of a replica nodes the load distibuted accordingly.
 
 **5)** There are many reasons for downgrading performance due to the current environment, but mostly because of the resources in hand.
 
@@ -40,7 +39,7 @@ The main problem is with resources, which can be done by scaling CoreDms both ho
 
 ###Daas Report
 
-The read is tested on actual dataset record counts and with **n=100** threads of requests runing parallely. As you can see from below picture the time is increasing with each count but the increase is exponentially minimal. It can also observe that write takes a bit mroe time than read but the pattern follows same as read.
+The read is tested on actual dataset record counts and with **n=100** threads of requests runing parallely. As you can see from below picture the time is increasing with each count but the increase is exponentially minimal. It can also observe that write takes a bit mroe time than read but the pattern follows same as read. The write is also done one record on each request call.
  ![DaasPerformace](DaasPerformace.png "DaasPerformace")
 
 
