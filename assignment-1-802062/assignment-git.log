@@ -1,2 +1,114 @@
-the content of this file should be the output of the log of your own git project for this assignment
-using git log command to export your git log
+commit 60423ea5d7be71e2878ae9ed14dae4fcc6a1d11a
+Author: oak <oakhan@kth.se>
+Date:   Thu Oct 10 15:05:43 2019 +0300
+
+    Add self grading and clean up
+
+commit 9ef713e05c613258585f25da91adfcae19189ae2
+Author: oak <oakhan@kth.se>
+Date:   Thu Oct 10 15:00:34 2019 +0300
+
+    Refactorization and report editing
+
+commit a392771456bd81d612815d336f43e187017037bd
+Author: oak <oakhan@kth.se>
+Date:   Thu Oct 10 01:52:26 2019 +0300
+
+    Add code 2
+
+commit 2a55a8286bceca48d521e7b991550cbbf9a92179
+Author: oak <oakhan@kth.se>
+Date:   Thu Oct 10 01:21:48 2019 +0300
+
+    Adding code
+
+commit 1c8fd3995c53683d7dd6174632b35b27f46d14d9
+Author: oak <oakhan@kth.se>
+Date:   Thu Oct 10 01:20:30 2019 +0300
+
+    refactor
+
+commit deebf73b51871a9a6d3513a2c5e4a5c17bf6e040
+Author: oak <oakhan@kth.se>
+Date:   Thu Oct 10 01:17:44 2019 +0300
+
+    add code
+
+commit fad578c5d0de4cf804ca7a01ae3f0a8561252e09
+Author: oak <oakhan@kth.se>
+Date:   Thu Oct 10 00:53:21 2019 +0300
+
+    Adding project
+
+commit 7cc4a29e2bae8763e137e491699a3ac7cd321d96
+Author: oak <oakhan@kth.se>
+Date:   Thu Oct 10 00:52:45 2019 +0300
+
+    redo
+
+commit 6e32ddcd8e6ced66639c086f14ebb13fea88c341
+Author: oak <oakhan@kth.se>
+Date:   Thu Oct 10 00:22:17 2019 +0300
+
+    Add data CSV
+
+commit 6090a1ef20656263ea6dbae4e60c02c01729344c
+Author: oak <oakhan@kth.se>
+Date:   Thu Oct 10 00:18:59 2019 +0300
+
+    Add git logs
+
+commit 1b54c4bdc88c310850ce0abd8e655a839b0337c7
+Merge: 64cab7c 40fe8e2
+Author: oak <oakhan@kth.se>
+Date:   Thu Oct 10 00:00:44 2019 +0300
+
+    Merge branch 'master' of github.com:OmerAhmedKhan/BigDataPlatformCS-E4640
+
+commit 64cab7c251bf7e6febad9399f07e4b2e9f00b2fe
+Author: oak <oakhan@kth.se>
+Date:   Wed Oct 9 23:59:15 2019 +0300
+
+    bigdataAssignment1 with template
+
+commit ee8ae338f90b8863fadf6858ce466c0d6556bb64
+Author: oak <oakhan@kth.se>
+Date:   Wed Oct 9 13:15:55 2019 +0300
+
+    Testing script
+
+commit 40fe8e2c1afd59bb45a74a90af52f43a4c4ff55f
+Author: Omer Ahmed Khan <omerahmed122@gmail.com>
+Date:   Tue Oct 8 23:16:35 2019 +0200
+
+    Assignment Answers
+
+commit 84a0b35790dffa058fb9cdf199e30a5ca885d254
+Author: oak <oakhan@kth.se>
+Date:   Wed Oct 9 00:11:21 2019 +0300
+
+    Add requirement.txt
+
+commit 428eebb5c06fdb5a6d976c07494d07b26b7d9286
+Author: Omer Ahmed Khan <omerahmed122@gmail.com>
+Date:   Wed Oct 9 00:08:41 2019 +0300
+
+    Add DataIngest Instructions
+
+commit b7cd6fdff26c361b54825aaa9d558c33e9bd52ed
+Author: Omer Ahmed Khan <omerahmed122@gmail.com>
+Date:   Wed Oct 9 00:07:08 2019 +0300
+
+    Update instructions
+
+commit 2e6ab19d07a5986969cd910860405a1a76a82af2
+Author: oak <oakhan@kth.se>
+Date:   Wed Oct 9 00:05:54 2019 +0300
+
+    Assignment1
+
+commit cf8df85f1177e52d70ccda5eec62100a0bf5fbc7
+Author: Omer Ahmed Khan <omerahmed122@gmail.com>
+Date:   Wed Oct 9 00:00:08 2019 +0300
+
+    Initial commit
