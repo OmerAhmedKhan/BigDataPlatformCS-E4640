@@ -1,0 +1,8 @@
+{
+    "abc":{
+      "file_number": 1,
+      "file_size": 1500,
+      "file_type": "csv",
+      "dir_path": "../../data/"
+    }
+}
