@@ -3,7 +3,7 @@ from flask import Flask
 from flask_restful import Resource, Api
 from flask_restful import request
 from flask import jsonify
-from helper import get_config, execute_batch_script, get_data_files
+from helper import get_config, execute_batch_script, get_data_files, execute_stream_script, monitor_stream_ingestion
 
 logging.basicConfig(filename='error.log',level=logging.ERROR)
 from pymongo import MongoClient
@@ -13,30 +13,6 @@ client = MongoClient('34.69.192.142', 27017, username='root', password='FoSezeYi
 
 app = Flask(__name__)
 api = Api(app)
-
-
-
-def basic_validations(args):
-    """Basic validations for arguments"""
-
-    for k, v in args.items():
-        if not k:
-            if not isinstance(v, str):
-                error = 'Argument parameter should only be String'
-                return error
-
-        if k not in ['app', 'category', 'rating', 'reviews', 'size', 'installs', 'type', 'price', 'content_rating', 'genres', 'last_updated',
-                     'current_ver', 'android _ver']:
-            error = 'Invalid Argument parameter'
-            logging.error(error)
-            return error
-
-        if not v:
-            error = 'Argument parameter should not be empty'
-            logging.error(error)
-            return error
-
-    return ""
 
 
 @app.route('/getFiles')
@@ -92,18 +68,44 @@ class StreamIngestManager(Resource):
     def get(self):
 
         tenant = request.args.get('tenant')
-        file_name = request.args.get('file_name')
-        if not all([file_name, tenant]):
+        operation = request.args.get('operation')
+        if not all([operation, tenant]):
             error = "Required parameters are not provided"
             logging.error(error)
             return {"error": error}, 400
 
-        if not execute_batch_script(file_name, tenant):
+        if not execute_stream_script(tenant, operation):
             error = "Unable to execute script"
             logging.error(error)
             return {"error": error}, 500
 
         return
+
+class DataFIles(Resource):
+    """ API for Shorten URL """
+
+    def get(self):
+
+        tenant = request.args.get('tenant')
+        if not tenant:
+            error = "Required parameters are not provided"
+            logging.error(error)
+            return {"error": error}, 400
+
+        return jsonify(get_data_files(tenant))
+
+class MonitorQueue(Resource):
+    """ API for Shorten URL """
+
+    def get(self):
+
+        tenant = request.args.get('tenant')
+        if not tenant:
+            error = "Required parameters are not provided"
+            logging.error(error)
+            return {"error": error}, 400
+
+        return jsonify(monitor_stream_ingestion(tenant))
 
 #
 #
@@ -131,9 +133,10 @@ class StreamIngestManager(Resource):
 
 api.add_resource(Status, '/status/')
 api.add_resource(Config, '/getConfig/<tenant_id>')
-api.add_resource(BatchIngestManager, '/execute/')
-# api.add_resource(Write, '/moveFile/')
-# api.add_resource(Read, '/read/<count>')
+api.add_resource(BatchIngestManager, '/executeBatch/')
+api.add_resource(StreamIngestManager, '/executeStream/')
+api.add_resource(DataFIles, '/getDataFiles/')
+api.add_resource(MonitorQueue, '/monitor/')
 # api.add_resource(Write, '/write/')
 
 if __name__ == '__main__':
