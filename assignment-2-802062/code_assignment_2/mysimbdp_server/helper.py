@@ -5,12 +5,14 @@ from pymongo import MongoClient
 import logging
 import requests
 from requests.auth import HTTPBasicAuth
+import os
 
+user_home_dir = os.path.expanduser('~')
 logging.basicConfig(filename='error.log',level=logging.ERROR)
-client = MongoClient('34.69.192.142', 27017, username='root', password='FoSezeYin7Qr', authSource='admin')
-root_path_to_client_data_dir = '/home/oak/mysimbdp-client-dir/'
-root_path_to_client_batch_script_dir = '/home/oak/BigDataPlatformCS-E4640/assignment-2-802062/code_assignment_2/mysimbdp-batchingestmanage'
-root_path_to_client_stream_script_dir = '/home/oak/BigDataPlatformCS-E4640/assignment-2-802062/code_assignment_2/mysimbdp-streamingestmanager/'
+client = MongoClient('<insert_ip>', 27017, username='<insert_user>', password='<insert_password>', authSource='admin')
+root_path_to_client_data_dir = '{}/mysimbdp-client-dir/'.format(user_home_dir)
+root_path_to_client_batch_script_dir = '{}/code_assignment_2/mysimbdp-batchingestmanager'.format(user_home_dir)
+root_path_to_client_stream_script_dir = '{}/code_assignment_2/mysimbdp-streamingestmanager/'.format(user_home_dir)
 
 
 def get_config(file_name, tenant):

@@ -1,25 +1,31 @@
-import argparse
-import glob
-import sys
+import logging
 import os
+import sys
+import json
+import pandas as pd
 
-from pymongo import MongoClient
-
-client = MongoClient('34.69.192.142', 27017, username='root', password='FoSezeYin7Qr', authSource='admin')
 user_home_dir = os.path.expanduser('~')
-root_path_to_client_dir = '{}/mysimbdp-client-dir/'.format(user_home_dir)
+root_path_to_client_stream_script_dir = '{}/code_assignment_2/mysimbdp-streamingestmanager/'.format(user_home_dir)
+logging.basicConfig(filename='batchingestmanager.log',
+                            filemode='a',
+                            format='%(asctime)s, %(process)d %(msecs)d %(name)s %(levelname)s %(message)s',
+                            datefmt='%H:%M:%S',
+                            level=logging.DEBUG)
 
-parser = argparse.ArgumentParser(description='Data Ingest from client source file to CoreDms')
-parser.add_argument('-p','--path', help='Path to source file', required=True)
-parser.add_argument('-t','--tenant_id', help='Tenant id', required=True)
+def write_csv_to_db(client, path, tenant):
+    db = client.mydb
+    df = pd.read_csv(path)
 
-args = vars(parser.parse_args())
-if args['path'] and args['tenant_id']:
+    records = json.loads(df.T.to_json()).values()
+    try:
+        # batching
+        db.things.insert_many(records)
+    except Exception as e:
+        logging.error("Unable to process request due to {}".format(str(e)))
+        logging.info("Going for a steaming solution")
+        client_stream_dir_path = '{}{}/'.format(root_path_to_client_stream_script_dir, tenant)
+        sys.path.insert(1, client_stream_dir_path)
+        from clientstreamingestapp import start, stop
+        start(client, tenant)
 
-    client_dir_path = '{}{}'.format(root_path_to_client_dir, args['tenant_id'])
-    sys.path.insert(1, args['path'])
-    from clientbatchingestapp import write_csv_to_db
-    for file in glob.glob('{}{}/*.csv'.format(root_path_to_client_dir, args.get('tenant_id', ''))):
-        write_csv_to_db(client, file)
-else:
-    print('Please select correct arrguments')
+    return True
