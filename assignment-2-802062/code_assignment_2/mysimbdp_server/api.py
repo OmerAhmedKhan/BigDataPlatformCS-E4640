@@ -97,37 +97,14 @@ class DataFIles(Resource):
 class MonitorQueue(Resource):
     """ API for Shorten URL """
 
-    def get(self):
+    def get(self, tenant_id):
 
-        tenant = request.args.get('tenant')
-        if not tenant:
+        if not tenant_id:
             error = "Required parameters are not provided"
             logging.error(error)
             return {"error": error}, 400
 
-        return jsonify(monitor_stream_ingestion(tenant))
-
-#
-#
-# class Write(Resource):
-#     """ API for Redirect URL """
-#
-#     def post(self):
-#         """Overriding get method for creating todo task"""
-#         data_dict = {}
-#         data = request.form.copy()
-#         error = basic_validations(data)
-#         if error:
-#             return {"error": error}, 400
-#
-#         for k, v in data.items():
-#             data_dict[k] = v
-#
-#         is_success = write_to_db(client, data_dict)
-#         if not is_success:
-#             return {"error": 'Unable to write to CoreDMS'}, 500
-#
-#         return {}, 201
+        return jsonify(monitor_stream_ingestion(tenant_id))
 
 
 
@@ -136,8 +113,7 @@ api.add_resource(Config, '/getConfig/<tenant_id>')
 api.add_resource(BatchIngestManager, '/executeBatch/')
 api.add_resource(StreamIngestManager, '/executeStream/')
 api.add_resource(DataFIles, '/getDataFiles/')
-api.add_resource(MonitorQueue, '/monitor/')
-# api.add_resource(Write, '/write/')
+api.add_resource(MonitorQueue, '/monitor/<tenant_id>')
 
 if __name__ == '__main__':
     app.run(debug=True, port=5000, host='0.0.0.0', threaded=True)

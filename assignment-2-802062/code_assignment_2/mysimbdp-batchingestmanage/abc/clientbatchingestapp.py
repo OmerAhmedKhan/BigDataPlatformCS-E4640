@@ -2,11 +2,11 @@ import pandas as pd
 import json
 import logging
 
-logging.basicConfig(filename='dataIngestPerformance.log',
+logging.basicConfig(filename='client.log',
                             filemode='a',
                             format='%(asctime)s, %(process)d %(msecs)d %(name)s %(levelname)s %(message)s',
                             datefmt='%H:%M:%S',
-                            level=logging.DEBUG)
+                            level=logging.INFO)
 
 fields = ['App', 'Category', 'Rating', 'Reviews', 'Size', 'Installs', 'Type',
        'Price', 'Content Rating', 'Genres', 'Last Updated', 'Current Ver',

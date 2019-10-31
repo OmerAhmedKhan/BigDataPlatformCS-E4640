@@ -4,10 +4,10 @@ from setuptools import setup, find_packages
 VERSION = '0.1.01'
 
 setup(
-    name='daas_api',
+    name='mysimbdpServer API',
     version=VERSION,
-    description='Daas Api',
-    long_description='Providing web services to read and write CoreDms',
+    description='mysimbdpServer Api',
+    long_description='Providing web services to data ingest into CoreDms',
     classifiers=[
         'Development Status :: 3 - Alpha',
         'Environment :: Console',
@@ -16,13 +16,13 @@ setup(
         'Natural Language :: English',
         'Programming Language :: Python :: 3'
     ],
-    keywords='oak daas api',
+    keywords='oak mysimbdpServer api',
     author='Omer Ahmed Khan',
-    author_email='omerahmed122@gmail.com',
+    author_email='omer.khan@aalto.fi',
     url='',
     license='',
     packages=find_packages(),
-    install_requires=['flask-restful', 'pymongo', 'pandas'],
+    install_requires=['flask-restful', 'pymongo', 'pandas', 'pika', ''],
     include_package_data=True,
     zip_safe=False
 )
