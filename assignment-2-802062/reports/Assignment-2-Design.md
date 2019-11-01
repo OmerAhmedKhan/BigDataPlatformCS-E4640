@@ -83,3 +83,9 @@ The platform can provide a check on quality on data while keeping the privacy po
 **Q)3.5**
 
 With current implementation of my big data platform we need to pass the versioning of file name of these client application to fetch the correct version before executing them. But they still need to follow certain insturcutions without which a platform never know what to execut from these apps.
+
+
+#### Bonus
+
+- Stream manager, is an endpoint which will create a new instance of a consumer which can consume a tenant queue. On each request a new consumer will spawn. With this manager you can also stop old instances. A handy tool for montioring is also there whcih will provide detailed report on the producer and consumer for the provided queue.
+
