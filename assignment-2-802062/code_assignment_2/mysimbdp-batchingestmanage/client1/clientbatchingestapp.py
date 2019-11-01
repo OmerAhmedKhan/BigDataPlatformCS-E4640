@@ -8,23 +8,10 @@ logging.basicConfig(filename='client.log',
                             datefmt='%H:%M:%S',
                             level=logging.INFO)
 
-fields = ['App', 'Category', 'Rating', 'Reviews', 'Size', 'Installs', 'Type',
-       'Price', 'Content Rating', 'Genres', 'Last Updated', 'Current Ver',
-       'Android Ver']
-
-
-def read_db(client, is_id=True, count=0):
-    db = client.mydb
-    cursor = db.things.find({}, {'_id': is_id}).limit(count)
-    return list(cursor)
-
 
 def write_csv_to_db(client, path):
     db = client.mydb
     df = pd.read_csv(path)
-    for column in df.columns:
-        if column not in fields:
-            logging.error('Schema error')
 
     records = json.loads(df.T.to_json()).values()
     try:
