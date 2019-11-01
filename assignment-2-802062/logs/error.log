@@ -1,0 +1,811 @@
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 173-219-877
+INFO:werkzeug:127.0.0.1 - - [07/Oct/2019 23:10:53] "GET /status HTTP/1.1" 308 -
+INFO:werkzeug:127.0.0.1 - - [07/Oct/2019 23:10:53] "GET /status/ HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [07/Oct/2019 23:10:53] "GET /favicon.ico HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [07/Oct/2019 23:11:02] "GET /read/ HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [07/Oct/2019 23:11:02] "GET /read/?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [07/Oct/2019 23:11:02] "GET /read/?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [07/Oct/2019 23:11:02] "GET /read/?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [07/Oct/2019 23:11:03] "GET /read/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [07/Oct/2019 23:11:03] "GET /read/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/oak/PycharmProjects/bigdata/helper.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 173-219-877
+INFO:werkzeug: * Detected change in '/home/oak/PycharmProjects/bigdata/api.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 173-219-877
+INFO:werkzeug:127.0.0.1 - - [07/Oct/2019 23:13:06] "GET /read/ HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/oak/PycharmProjects/bigdata/api.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 173-219-877
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 173-219-877
+INFO:werkzeug:127.0.0.1 - - [07/Oct/2019 23:19:00] "GET /read/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [07/Oct/2019 23:19:04] "GET /read/2 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [07/Oct/2019 23:19:08] "GET /read/ HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [07/Oct/2019 23:19:18] "GET /read/ HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [07/Oct/2019 23:19:27] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [07/Oct/2019 23:19:32] "GET /read/100 HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 173-219-877
+INFO:werkzeug:127.0.0.1 - - [07/Oct/2019 23:28:32] "GET /read/100 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [07/Oct/2019 23:28:41] "GET /read/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [07/Oct/2019 23:28:47] "GET /read/100 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [07/Oct/2019 23:28:52] "GET /read/10 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [07/Oct/2019 23:29:09] "GET /write/ HTTP/1.1" 405 -
+ERROR:root:Invalid Argument parameter
+INFO:werkzeug:127.0.0.1 - - [07/Oct/2019 23:29:15] "POST /write/ HTTP/1.1" 400 -
+INFO:werkzeug:127.0.0.1 - - [07/Oct/2019 23:29:32] "POST /write/ HTTP/1.1" 201 -
+INFO:werkzeug:127.0.0.1 - - [07/Oct/2019 23:30:22] "POST /write/ HTTP/1.1" 201 -
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 173-219-877
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 173-219-877
+INFO:werkzeug:127.0.0.1 - - [07/Oct/2019 23:33:24] "POST /write/ HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [07/Oct/2019 23:34:00] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [07/Oct/2019 23:34:23] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/oak/PycharmProjects/bigdata/api.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 173-219-877
+INFO:werkzeug:127.0.0.1 - - [07/Oct/2019 23:35:43] "GET /read/ HTTP/1.1" 404 -
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 173-219-877
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 13:35:45] "GET /status HTTP/1.1" 308 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 13:35:45] "GET /status HTTP/1.1" 308 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 13:35:45] "GET /status HTTP/1.1" 308 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 13:35:45] "GET /status HTTP/1.1" 308 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 13:35:45] "GET /status HTTP/1.1" 308 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 13:35:45] "GET /status HTTP/1.1" 308 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 13:35:45] "GET /status HTTP/1.1" 308 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 13:35:45] "GET /status HTTP/1.1" 308 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 13:35:45] "GET /status HTTP/1.1" 308 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 13:35:45] "GET /status HTTP/1.1" 308 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 13:35:45] "GET /status/ HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 13:35:45] "GET /status/ HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 13:35:45] "GET /status/ HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 13:35:45] "GET /status/ HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 13:35:45] "GET /status/ HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 13:35:45] "GET /status/ HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 13:35:45] "GET /status/ HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 13:35:45] "GET /status/ HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 13:35:45] "GET /status/ HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 13:35:45] "GET /status/ HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 173-219-877
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:12:36] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:12:39] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:12:43] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:12:44] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:12:46] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:12:46] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:12:47] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:12:47] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:12:47] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:12:52] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:17:43] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:17:44] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:17:45] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:17:49] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:17:49] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:17:50] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:17:50] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:17:50] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:17:51] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:17:51] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:19:53] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:19:57] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:19:57] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:19:58] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:19:58] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:19:59] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:19:59] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:19:59] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:20:01] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:20:01] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:20:32] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:20:37] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:20:37] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:20:41] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:20:52] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:20:52] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:20:55] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:20:59] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:21:00] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:21:00] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:21:00] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:21:06] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:21:08] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:21:09] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:21:10] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:21:10] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:21:12] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:21:13] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:21:13] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:21:15] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:21:16] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:21:16] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:21:18] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:21:18] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:21:19] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:21:20] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:21:20] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:21:20] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:21:23] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:21:23] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:21:24] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:21:26] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:21:27] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:21:28] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:21:29] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:21:30] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:21:30] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:21:32] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:21:33] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:21:33] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:21:33] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:21:33] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:21:34] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:21:35] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:21:38] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:21:39] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:21:39] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:21:40] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:21:42] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:21:43] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:21:43] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:21:44] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:21:44] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:21:44] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:21:45] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:21:45] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:21:47] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:21:47] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:21:47] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:21:48] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:21:49] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:21:49] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:21:50] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:21:50] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:21:50] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:21:51] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:21:52] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:21:52] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:21:52] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:21:52] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:21:53] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:21:53] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:21:53] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:21:54] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:21:54] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:21:54] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:21:55] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:21:56] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:21:56] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:21:56] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:21:57] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:22:01] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:22:01] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:22:02] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:22:02] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:22:03] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:22:03] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:22:04] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:22:04] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:22:05] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:22:06] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:22:07] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:22:08] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:22:08] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:22:08] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:22:11] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:22:12] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:22:12] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:22:13] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:22:13] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:22:14] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:22:15] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:22:15] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:22:16] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:22:16] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:22:16] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:22:16] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:22:16] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:22:17] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:22:17] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:22:18] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:22:18] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:22:19] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:22:19] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:22:19] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:22:19] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:22:20] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:22:22] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:22:22] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:22:22] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:22:22] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:22:23] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:22:24] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:22:24] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:22:25] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:22:25] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:22:26] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:22:26] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:22:26] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:22:27] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:22:27] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:22:29] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:22:29] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:22:29] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:22:30] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:22:30] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:22:30] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:22:31] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:22:31] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:22:31] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:22:31] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:22:31] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:22:32] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:22:32] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:22:32] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:22:33] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:22:34] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:22:35] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:22:35] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:22:38] "GET /read/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:29:40] "POST /write/ HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:29:40] "POST /write/ HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:29:40] "POST /write/ HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:29:40] "POST /write/ HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:29:40] "POST /write/ HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:29:40] "POST /write/ HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:29:40] "POST /write/ HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:29:40] "POST /write/ HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:29:40] "POST /write/ HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:29:40] "POST /write/ HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:30:05] "POST /write/ HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:30:05] "POST /write/ HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:30:05] "POST /write/ HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:30:05] "POST /write/ HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:30:05] "POST /write/ HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:30:05] "POST /write/ HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:30:05] "POST /write/ HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:30:05] "POST /write/ HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:30:05] "POST /write/ HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:30:05] "POST /write/ HTTP/1.1" 500 -
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 173-219-877
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:31:14] "POST /write/ HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:31:15] "POST /write/ HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:31:16] "POST /write/ HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:31:16] "POST /write/ HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:31:16] "POST /write/ HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:31:16] "POST /write/ HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:31:16] "POST /write/ HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:31:16] "POST /write/ HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:31:16] "POST /write/ HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:31:16] "POST /write/ HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:31:33] "POST /write/ HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:31:33] "POST /write/ HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:31:33] "POST /write/ HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:31:33] "POST /write/ HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:31:33] "POST /write/ HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:31:33] "POST /write/ HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:31:33] "POST /write/ HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:31:33] "POST /write/ HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:31:33] "POST /write/ HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:31:34] "POST /write/ HTTP/1.1" 500 -
+INFO:werkzeug: * Detected change in '/home/oak/PycharmProjects/bigdata/api.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 173-219-877
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:35:36] "POST /write/ HTTP/1.1" 201 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:35:36] "POST /write/ HTTP/1.1" 201 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:35:36] "POST /write/ HTTP/1.1" 201 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:35:36] "POST /write/ HTTP/1.1" 201 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:35:36] "POST /write/ HTTP/1.1" 201 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:35:36] "POST /write/ HTTP/1.1" 201 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:35:36] "POST /write/ HTTP/1.1" 201 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:35:36] "POST /write/ HTTP/1.1" 201 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:35:36] "POST /write/ HTTP/1.1" 201 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:35:36] "POST /write/ HTTP/1.1" 201 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:37:59] "POST /write/ HTTP/1.1" 201 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:37:59] "POST /write/ HTTP/1.1" 201 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:38:00] "POST /write/ HTTP/1.1" 201 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:38:00] "POST /write/ HTTP/1.1" 201 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:38:00] "POST /write/ HTTP/1.1" 201 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:38:00] "POST /write/ HTTP/1.1" 201 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:38:00] "POST /write/ HTTP/1.1" 201 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:38:00] "POST /write/ HTTP/1.1" 201 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:38:00] "POST /write/ HTTP/1.1" 201 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:38:00] "POST /write/ HTTP/1.1" 201 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:38:00] "POST /write/ HTTP/1.1" 201 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:38:00] "POST /write/ HTTP/1.1" 201 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:38:00] "POST /write/ HTTP/1.1" 201 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:38:00] "POST /write/ HTTP/1.1" 201 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:38:00] "POST /write/ HTTP/1.1" 201 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:38:00] "POST /write/ HTTP/1.1" 201 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:38:00] "POST /write/ HTTP/1.1" 201 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:38:00] "POST /write/ HTTP/1.1" 201 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:38:00] "POST /write/ HTTP/1.1" 201 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:38:00] "POST /write/ HTTP/1.1" 201 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:38:01] "POST /write/ HTTP/1.1" 201 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:38:01] "POST /write/ HTTP/1.1" 201 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:38:01] "POST /write/ HTTP/1.1" 201 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:38:01] "POST /write/ HTTP/1.1" 201 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:38:01] "POST /write/ HTTP/1.1" 201 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:38:01] "POST /write/ HTTP/1.1" 201 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:38:01] "POST /write/ HTTP/1.1" 201 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:38:01] "POST /write/ HTTP/1.1" 201 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:38:01] "POST /write/ HTTP/1.1" 201 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:38:01] "POST /write/ HTTP/1.1" 201 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:38:01] "POST /write/ HTTP/1.1" 201 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:38:01] "POST /write/ HTTP/1.1" 201 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:38:01] "POST /write/ HTTP/1.1" 201 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:38:01] "POST /write/ HTTP/1.1" 201 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:38:01] "POST /write/ HTTP/1.1" 201 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:38:01] "POST /write/ HTTP/1.1" 201 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:38:01] "POST /write/ HTTP/1.1" 201 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:38:01] "POST /write/ HTTP/1.1" 201 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:38:01] "POST /write/ HTTP/1.1" 201 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:38:01] "POST /write/ HTTP/1.1" 201 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:38:01] "POST /write/ HTTP/1.1" 201 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:38:01] "POST /write/ HTTP/1.1" 201 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:38:01] "POST /write/ HTTP/1.1" 201 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:38:01] "POST /write/ HTTP/1.1" 201 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:38:01] "POST /write/ HTTP/1.1" 201 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:38:01] "POST /write/ HTTP/1.1" 201 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:38:01] "POST /write/ HTTP/1.1" 201 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:38:01] "POST /write/ HTTP/1.1" 201 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:38:01] "POST /write/ HTTP/1.1" 201 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:38:01] "POST /write/ HTTP/1.1" 201 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:38:01] "POST /write/ HTTP/1.1" 201 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:38:01] "POST /write/ HTTP/1.1" 201 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:38:01] "POST /write/ HTTP/1.1" 201 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:38:01] "POST /write/ HTTP/1.1" 201 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:38:01] "POST /write/ HTTP/1.1" 201 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:38:01] "POST /write/ HTTP/1.1" 201 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:38:01] "POST /write/ HTTP/1.1" 201 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:38:01] "POST /write/ HTTP/1.1" 201 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:38:01] "POST /write/ HTTP/1.1" 201 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:38:01] "POST /write/ HTTP/1.1" 201 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:38:01] "POST /write/ HTTP/1.1" 201 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:38:01] "POST /write/ HTTP/1.1" 201 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:38:01] "POST /write/ HTTP/1.1" 201 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:38:01] "POST /write/ HTTP/1.1" 201 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:38:01] "POST /write/ HTTP/1.1" 201 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:38:01] "POST /write/ HTTP/1.1" 201 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:38:01] "POST /write/ HTTP/1.1" 201 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:38:01] "POST /write/ HTTP/1.1" 201 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:38:01] "POST /write/ HTTP/1.1" 201 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:38:01] "POST /write/ HTTP/1.1" 201 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:38:01] "POST /write/ HTTP/1.1" 201 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:38:01] "POST /write/ HTTP/1.1" 201 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:38:01] "POST /write/ HTTP/1.1" 201 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:38:01] "POST /write/ HTTP/1.1" 201 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:38:01] "POST /write/ HTTP/1.1" 201 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:38:01] "POST /write/ HTTP/1.1" 201 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:38:01] "POST /write/ HTTP/1.1" 201 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:38:01] "POST /write/ HTTP/1.1" 201 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:38:01] "POST /write/ HTTP/1.1" 201 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:38:01] "POST /write/ HTTP/1.1" 201 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:38:01] "POST /write/ HTTP/1.1" 201 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:38:01] "POST /write/ HTTP/1.1" 201 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:38:01] "POST /write/ HTTP/1.1" 201 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:38:01] "POST /write/ HTTP/1.1" 201 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:38:01] "POST /write/ HTTP/1.1" 201 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:38:01] "POST /write/ HTTP/1.1" 201 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:38:01] "POST /write/ HTTP/1.1" 201 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:38:01] "POST /write/ HTTP/1.1" 201 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:38:01] "POST /write/ HTTP/1.1" 201 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:38:01] "POST /write/ HTTP/1.1" 201 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:38:01] "POST /write/ HTTP/1.1" 201 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:38:01] "POST /write/ HTTP/1.1" 201 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:38:02] "POST /write/ HTTP/1.1" 201 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:38:02] "POST /write/ HTTP/1.1" 201 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:38:02] "POST /write/ HTTP/1.1" 201 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:38:02] "POST /write/ HTTP/1.1" 201 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:38:02] "POST /write/ HTTP/1.1" 201 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:38:02] "POST /write/ HTTP/1.1" 201 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:38:02] "POST /write/ HTTP/1.1" 201 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2019 23:38:02] "POST /write/ HTTP/1.1" 201 -
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 173-219-877
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 173-219-877
+ERROR:root:Tenant not found
+INFO:werkzeug:127.0.0.1 - - [29/Oct/2019 21:10:30] "GET /getConfig/abc HTTP/1.1" 200 -
+ERROR:root:Tenant not found
+INFO:werkzeug:127.0.0.1 - - [29/Oct/2019 21:12:19] "GET /getConfig/abc HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 173-219-877
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 173-219-877
+INFO:werkzeug:127.0.0.1 - - [29/Oct/2019 21:13:17] "GET /getConfig/abc HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 173-219-877
+INFO:werkzeug:127.0.0.1 - - [29/Oct/2019 21:13:54] "GET /getConfig/abc HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Oct/2019 21:14:18] "GET /getConfig/abc HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Oct/2019 21:14:30] "GET /getConfig/abc HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Oct/2019 21:15:00] "GET /getConfig/abc HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Oct/2019 21:15:11] "GET /getConfig/abc HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Oct/2019 21:15:52] "GET /getConfig/abc HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/oak/BigDataPlatformCS-E4640/assignment-2-802062/code_assignment_2/mysimbdp_server/helper.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 173-219-877
+INFO:werkzeug: * Detected change in '/home/oak/BigDataPlatformCS-E4640/assignment-2-802062/code_assignment_2/mysimbdp_server/helper.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 173-219-877
+INFO:werkzeug: * Detected change in '/home/oak/BigDataPlatformCS-E4640/assignment-2-802062/code_assignment_2/mysimbdp_server/api.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 173-219-877
+INFO:werkzeug: * Detected change in '/home/oak/BigDataPlatformCS-E4640/assignment-2-802062/code_assignment_2/mysimbdp_server/api.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 173-219-877
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 173-219-877
+INFO:werkzeug:127.0.0.1 - - [29/Oct/2019 23:22:27] "GET /executeBatch/?tenant=abc&operation=start HTTP/1.1" 405 -
+INFO:werkzeug:127.0.0.1 - - [29/Oct/2019 23:22:47] "GET /executeStream/?tenant=abc&operation=start HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [29/Oct/2019 23:23:01] "GET /executeStream/?tenant=abc&operation=start HTTP/1.1" 500 -
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 173-219-877
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 173-219-877
+INFO:werkzeug:127.0.0.1 - - [29/Oct/2019 23:24:07] "GET /executeStream/?tenant=abc&operation=start HTTP/1.1" 500 -
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 173-219-877
+INFO:werkzeug:127.0.0.1 - - [29/Oct/2019 23:24:53] "GET /executeStream/?tenant=abc&operation=start HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [29/Oct/2019 23:27:07] "GET /executeStream/?tenant=abc&operation=start HTTP/1.1" 500 -
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 173-219-877
+INFO:werkzeug:127.0.0.1 - - [29/Oct/2019 23:28:11] "GET /executeStream/?tenant=abc&operation=start HTTP/1.1" 500 -
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 173-219-877
+ERROR:root:Unable to execute script
+INFO:werkzeug:127.0.0.1 - - [29/Oct/2019 23:29:35] "GET /executeStream/?tenant=abc&operation=start HTTP/1.1" 500 -
+ERROR:pika.adapters.blocking_connection:BlockingConnection.close(200, 'Normal shutdown') called on closed connection.
+INFO:werkzeug:127.0.0.1 - - [29/Oct/2019 23:30:05] "GET /executeStream/?tenant=abc&operation=start HTTP/1.1" 500 -
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 173-219-877
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 173-219-877
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 173-219-877
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 173-219-877
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 173-219-877
+INFO:werkzeug:10.100.40.140 - - [30/Oct/2019 15:00:51] "GET / HTTP/1.1" 404 -
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 173-219-877
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 173-219-877
+ERROR:root:Unable to execute script
+INFO:werkzeug:127.0.0.1 - - [30/Oct/2019 15:05:56] "GET /executeStream/?tenant=abc&operation=start HTTP/1.1" 500 -
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 173-219-877
+INFO:werkzeug:127.0.0.1 - - [30/Oct/2019 15:12:02] "GET /executeStream/?tenant=abc&operation=start HTTP/1.1" 500 -
+INFO:werkzeug: * Detected change in '/home/oak/BigDataPlatformCS-E4640/assignment-2-802062/code_assignment_2/mysimbdp-streamingestmanager/abc/clientstreamingestapp.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 173-219-877
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 173-219-877
+ERROR:root:Unable to execute script
+INFO:werkzeug:127.0.0.1 - - [30/Oct/2019 15:14:46] "GET /executeStream/?tenant=abc&operation=start HTTP/1.1" 500 -
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 173-219-877
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 173-219-877
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 173-219-877
+ERROR:pika.adapters.utils.io_services_utils:_AsyncBaseTransport._consume() failed, aborting connection: error=ConnectionResetError(104, 'Connection reset by peer'); sock=<socket.socket fd=14, family=AddressFamily.AF_INET, type=2049, proto=6, laddr=('127.0.0.1', 58244)>; Caller's stack:
+Traceback (most recent call last):
+  File "/home/oak/.virtualenvs/bigdata/lib/python3.6/site-packages/pika/adapters/utils/io_services_utils.py", line 1041, in _on_socket_readable
+    self._consume()
+  File "/home/oak/.virtualenvs/bigdata/lib/python3.6/site-packages/pika/adapters/utils/io_services_utils.py", line 791, in _consume
+    data = self._sigint_safe_recv(self._sock, self._MAX_RECV_BYTES)
+  File "/home/oak/.virtualenvs/bigdata/lib/python3.6/site-packages/pika/adapters/utils/io_services_utils.py", line 79, in retry_sigint_wrap
+    return func(*args, **kwargs)
+  File "/home/oak/.virtualenvs/bigdata/lib/python3.6/site-packages/pika/adapters/utils/io_services_utils.py", line 846, in _sigint_safe_recv
+    return sock.recv(max_bytes)
+ConnectionResetError: [Errno 104] Connection reset by peer
+Traceback (most recent call last):
+  File "/home/oak/.virtualenvs/bigdata/lib/python3.6/site-packages/pika/adapters/utils/io_services_utils.py", line 1041, in _on_socket_readable
+    self._consume()
+  File "/home/oak/.virtualenvs/bigdata/lib/python3.6/site-packages/pika/adapters/utils/io_services_utils.py", line 791, in _consume
+    data = self._sigint_safe_recv(self._sock, self._MAX_RECV_BYTES)
+  File "/home/oak/.virtualenvs/bigdata/lib/python3.6/site-packages/pika/adapters/utils/io_services_utils.py", line 79, in retry_sigint_wrap
+    return func(*args, **kwargs)
+  File "/home/oak/.virtualenvs/bigdata/lib/python3.6/site-packages/pika/adapters/utils/io_services_utils.py", line 846, in _sigint_safe_recv
+    return sock.recv(max_bytes)
+ConnectionResetError: [Errno 104] Connection reset by peer
+ERROR:pika.adapters.base_connection:connection_lost: StreamLostError: ("Stream connection lost: ConnectionResetError(104, 'Connection reset by peer')",)
+ERROR:pika.adapters.blocking_connection:Unexpected connection close detected: StreamLostError: ("Stream connection lost: ConnectionResetError(104, 'Connection reset by peer')",)
+INFO:werkzeug:127.0.0.1 - - [30/Oct/2019 19:04:02] "GET /executeStream/?tenant=abc&operation=start HTTP/1.1" 500 -
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 173-219-877
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 173-219-877
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 173-219-877
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 173-219-877
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 173-219-877
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 173-219-877
+INFO:werkzeug:127.0.0.1 - - [30/Oct/2019 21:31:52] "GET /getDataFiles HTTP/1.1" 308 -
+ERROR:root:Required parameters are not provided
+INFO:werkzeug:127.0.0.1 - - [30/Oct/2019 21:31:52] "GET /getDataFiles/ HTTP/1.1" 400 -
+INFO:werkzeug:127.0.0.1 - - [30/Oct/2019 21:32:00] "GET /getDataFiles?tenant=abc HTTP/1.1" 308 -
+INFO:werkzeug:127.0.0.1 - - [30/Oct/2019 21:32:00] "GET /getDataFiles/?tenant=abc HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 173-219-877
+INFO:werkzeug:127.0.0.1 - - [30/Oct/2019 21:32:15] "GET /getDataFiles?tenant=abc HTTP/1.1" 308 -
+INFO:werkzeug:127.0.0.1 - - [30/Oct/2019 21:32:45] "GET /getDataFiles/?tenant=abc HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Oct/2019 21:33:36] "GET /getDataFiles?tenant=abc HTTP/1.1" 308 -
+INFO:werkzeug:127.0.0.1 - - [30/Oct/2019 21:33:48] "GET /getDataFiles/?tenant=abc HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/oak/BigDataPlatformCS-E4640/assignment-2-802062/code_assignment_2/mysimbdp_server/helper.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 173-219-877
+INFO:werkzeug:127.0.0.1 - - [30/Oct/2019 21:34:09] "GET /getDataFiles?tenant=abc HTTP/1.1" 308 -
+INFO:werkzeug:127.0.0.1 - - [30/Oct/2019 21:34:09] "GET /getDataFiles/?tenant=abc HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/oak/BigDataPlatformCS-E4640/assignment-2-802062/code_assignment_2/mysimbdp_server/helper.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 173-219-877
+INFO:werkzeug: * Detected change in '/home/oak/BigDataPlatformCS-E4640/assignment-2-802062/code_assignment_2/mysimbdp_server/helper.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 173-219-877
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 173-219-877
+INFO:werkzeug:127.0.0.1 - - [30/Oct/2019 21:46:10] "GET /monitor?tenant=abc HTTP/1.1" 308 -
+INFO:werkzeug:127.0.0.1 - - [30/Oct/2019 21:46:10] "GET /monitor/?tenant=abc HTTP/1.1" 500 -
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 173-219-877
+INFO:werkzeug:127.0.0.1 - - [30/Oct/2019 21:46:29] "GET /monitor?tenant=abc HTTP/1.1" 308 -
+INFO:werkzeug:127.0.0.1 - - [30/Oct/2019 21:46:29] "GET /monitor/?tenant=abc HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [30/Oct/2019 21:46:39] "GET /monitor?tenant=abc HTTP/1.1" 308 -
+INFO:werkzeug:127.0.0.1 - - [30/Oct/2019 21:48:07] "GET /monitor/?tenant=abc HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [30/Oct/2019 21:48:17] "GET /monitor?tenant=abc HTTP/1.1" 308 -
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 173-219-877
+INFO:werkzeug:127.0.0.1 - - [30/Oct/2019 21:49:22] "GET /monitor?tenant=abc HTTP/1.1" 308 -
+INFO:werkzeug:127.0.0.1 - - [30/Oct/2019 21:49:28] "GET /monitor/?tenant=abc HTTP/1.1" 200 -
+ERROR:pika.channel:Unexpected frame: <METHOD(['channel_number=1', 'frame_type=1', "method=<Queue.DeclareOk(['consumer_count=1', 'message_count=0', 'queue=abc_queue'])>"])>
+ERROR:pika.adapters.utils.io_services_utils:_AsyncBaseTransport._produce() failed, aborting connection: error=IndexError('pop from an empty deque',); sock=<socket.socket fd=14, family=AddressFamily.AF_INET, type=2049, proto=6, laddr=('127.0.0.1', 38256), raddr=('127.0.0.1', 5672)>; Caller's stack:
+Traceback (most recent call last):
+  File "/home/oak/.virtualenvs/bigdata/lib/python3.6/site-packages/pika/adapters/utils/io_services_utils.py", line 1097, in _on_socket_writable
+    self._produce()
+  File "/home/oak/.virtualenvs/bigdata/lib/python3.6/site-packages/pika/adapters/utils/io_services_utils.py", line 822, in _produce
+    chunk = self._tx_buffers.popleft()
+IndexError: pop from an empty deque
+Traceback (most recent call last):
+  File "/home/oak/.virtualenvs/bigdata/lib/python3.6/site-packages/pika/adapters/utils/io_services_utils.py", line 1097, in _on_socket_writable
+    self._produce()
+  File "/home/oak/.virtualenvs/bigdata/lib/python3.6/site-packages/pika/adapters/utils/io_services_utils.py", line 822, in _produce
+    chunk = self._tx_buffers.popleft()
+IndexError: pop from an empty deque
+ERROR:pika.adapters.base_connection:connection_lost: StreamLostError: ("Stream connection lost: IndexError('pop from an empty deque',)",)
+ERROR:pika.adapters.blocking_connection:Unexpected connection close detected: StreamLostError: ("Stream connection lost: IndexError('pop from an empty deque',)",)
+INFO:werkzeug:127.0.0.1 - - [30/Oct/2019 21:52:01] "GET /executeStream/?tenant=abc&operation=start HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [30/Oct/2019 21:52:01] "GET /executeStream/?tenant=abc&operation=start HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [30/Oct/2019 21:52:19] "GET /executeStream/?tenant=abc&operation=start HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [30/Oct/2019 21:52:23] "GET /executeStream/?tenant=abc&operation=start HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [30/Oct/2019 21:53:51] "GET /executeStream/?tenant=abc&operation=start HTTP/1.1" 500 -
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 173-219-877
+ERROR:pika.channel:Unexpected frame: <METHOD(['channel_number=1', 'frame_type=1', 'method=<Queue.BindOk>'])>
+ERROR:pika.adapters.utils.io_services_utils:_AsyncBaseTransport._produce() failed, aborting connection: error=IndexError('pop from an empty deque',); sock=<socket.socket fd=14, family=AddressFamily.AF_INET, type=2049, proto=6, laddr=('127.0.0.1', 40688), raddr=('127.0.0.1', 5672)>; Caller's stack:
+Traceback (most recent call last):
+  File "/home/oak/.virtualenvs/bigdata/lib/python3.6/site-packages/pika/adapters/utils/io_services_utils.py", line 1097, in _on_socket_writable
+    self._produce()
+  File "/home/oak/.virtualenvs/bigdata/lib/python3.6/site-packages/pika/adapters/utils/io_services_utils.py", line 822, in _produce
+    chunk = self._tx_buffers.popleft()
+IndexError: pop from an empty deque
+Traceback (most recent call last):
+  File "/home/oak/.virtualenvs/bigdata/lib/python3.6/site-packages/pika/adapters/utils/io_services_utils.py", line 1097, in _on_socket_writable
+    self._produce()
+  File "/home/oak/.virtualenvs/bigdata/lib/python3.6/site-packages/pika/adapters/utils/io_services_utils.py", line 822, in _produce
+    chunk = self._tx_buffers.popleft()
+IndexError: pop from an empty deque
+ERROR:pika.adapters.base_connection:connection_lost: StreamLostError: ("Stream connection lost: IndexError('pop from an empty deque',)",)
+ERROR:pika.adapters.blocking_connection:Unexpected connection close detected: StreamLostError: ("Stream connection lost: IndexError('pop from an empty deque',)",)
+INFO:werkzeug:127.0.0.1 - - [30/Oct/2019 21:54:17] "GET /executeStream/?tenant=abc&operation=start HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [30/Oct/2019 21:54:17] "GET /executeStream/?tenant=abc&operation=start HTTP/1.1" 500 -
+INFO:werkzeug: * Detected change in '/home/oak/BigDataPlatformCS-E4640/assignment-2-802062/code_assignment_2/mysimbdp-streamingestmanager/abc/clientstreamingestapp.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 173-219-877
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 173-219-877
+ERROR:pika.channel:Unexpected frame: <METHOD(['channel_number=1', 'frame_type=1', "method=<Queue.DeclareOk(['consumer_count=1', 'message_count=0', 'queue=abc_queue'])>"])>
+ERROR:pika.adapters.utils.io_services_utils:_AsyncBaseTransport._produce() failed, aborting connection: error=IndexError('pop from an empty deque',); sock=<socket.socket fd=14, family=AddressFamily.AF_INET, type=2049, proto=6, laddr=('127.0.0.1', 41502), raddr=('127.0.0.1', 5672)>; Caller's stack:
+Traceback (most recent call last):
+  File "/home/oak/.virtualenvs/bigdata/lib/python3.6/site-packages/pika/adapters/utils/io_services_utils.py", line 1097, in _on_socket_writable
+    self._produce()
+  File "/home/oak/.virtualenvs/bigdata/lib/python3.6/site-packages/pika/adapters/utils/io_services_utils.py", line 822, in _produce
+    chunk = self._tx_buffers.popleft()
+IndexError: pop from an empty deque
+Traceback (most recent call last):
+  File "/home/oak/.virtualenvs/bigdata/lib/python3.6/site-packages/pika/adapters/utils/io_services_utils.py", line 1097, in _on_socket_writable
+    self._produce()
+  File "/home/oak/.virtualenvs/bigdata/lib/python3.6/site-packages/pika/adapters/utils/io_services_utils.py", line 822, in _produce
+    chunk = self._tx_buffers.popleft()
+IndexError: pop from an empty deque
+ERROR:pika.adapters.base_connection:connection_lost: StreamLostError: ("Stream connection lost: IndexError('pop from an empty deque',)",)
+ERROR:pika.adapters.blocking_connection:Unexpected connection close detected: StreamLostError: ("Stream connection lost: IndexError('pop from an empty deque',)",)
+INFO:werkzeug:127.0.0.1 - - [30/Oct/2019 21:55:52] "GET /executeStream/?tenant=abc&operation=start HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [30/Oct/2019 21:55:57] "GET /executeStream/?tenant=abc&operation=start HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [30/Oct/2019 21:56:20] "GET /executeStream/?tenant=abc&operation=start HTTP/1.1" 500 -
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 173-219-877
+ERROR:pika.channel:Unexpected frame: <METHOD(['channel_number=1', 'frame_type=1', "method=<Queue.DeclareOk(['consumer_count=1', 'message_count=0', 'queue=abc_queue'])>"])>
+ERROR:pika.adapters.utils.io_services_utils:_AsyncBaseTransport._produce() failed, aborting connection: error=IndexError('pop from an empty deque',); sock=<socket.socket fd=14, family=AddressFamily.AF_INET, type=2049, proto=6, laddr=('127.0.0.1', 43328), raddr=('127.0.0.1', 5672)>; Caller's stack:
+Traceback (most recent call last):
+  File "/home/oak/.virtualenvs/bigdata/lib/python3.6/site-packages/pika/adapters/utils/io_services_utils.py", line 1097, in _on_socket_writable
+    self._produce()
+  File "/home/oak/.virtualenvs/bigdata/lib/python3.6/site-packages/pika/adapters/utils/io_services_utils.py", line 822, in _produce
+    chunk = self._tx_buffers.popleft()
+IndexError: pop from an empty deque
+Traceback (most recent call last):
+  File "/home/oak/.virtualenvs/bigdata/lib/python3.6/site-packages/pika/adapters/utils/io_services_utils.py", line 1097, in _on_socket_writable
+    self._produce()
+  File "/home/oak/.virtualenvs/bigdata/lib/python3.6/site-packages/pika/adapters/utils/io_services_utils.py", line 822, in _produce
+    chunk = self._tx_buffers.popleft()
+IndexError: pop from an empty deque
+ERROR:pika.adapters.base_connection:connection_lost: StreamLostError: ("Stream connection lost: IndexError('pop from an empty deque',)",)
+ERROR:pika.adapters.blocking_connection:Unexpected connection close detected: StreamLostError: ("Stream connection lost: IndexError('pop from an empty deque',)",)
+ERROR:pika.adapters.blocking_connection:Unexpected connection close detected: StreamLostError: ("Stream connection lost: IndexError('pop from an empty deque',)",)
+INFO:werkzeug:127.0.0.1 - - [30/Oct/2019 21:59:29] "GET /executeStream/?tenant=abc&operation=start HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [30/Oct/2019 21:59:29] "GET /executeStream/?tenant=abc&operation=start HTTP/1.1" 500 -
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 173-219-877
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 173-219-877
+INFO:werkzeug:127.0.0.1 - - [01/Nov/2019 01:55:54] "GET /executeStream/?tenant=abc&operation=start HTTP/1.1" 500 -
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 173-219-877
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 173-219-877
+INFO:werkzeug:127.0.0.1 - - [01/Nov/2019 01:57:27] "GET /executeStream/?tenant=abc&operation=start HTTP/1.1" 500 -
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 173-219-877
+INFO:werkzeug:127.0.0.1 - - [01/Nov/2019 01:57:48] "GET /executeStream/?tenant=abc&operation=start HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [01/Nov/2019 01:58:36] "GET /executeStream/?tenant=client1&operation=start HTTP/1.1" 500 -
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 173-219-877
+INFO:werkzeug:127.0.0.1 - - [01/Nov/2019 01:58:45] "GET /executeStream/?tenant=client1&operation=start HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [01/Nov/2019 01:59:51] "GET /executeStream/?tenant=client1&operation=start HTTP/1.1" 500 -
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 173-219-877
+INFO:werkzeug:127.0.0.1 - - [01/Nov/2019 02:00:04] "GET /executeStream/?tenant=client1&operation=start HTTP/1.1" 500 -
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 173-219-877
+INFO:werkzeug:127.0.0.1 - - [01/Nov/2019 02:00:57] "GET /executeStream/?tenant=client1&operation=start HTTP/1.1" 500 -
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 173-219-877
+INFO:werkzeug:127.0.0.1 - - [01/Nov/2019 02:02:47] "GET /executeStream/?tenant=client1&operation=start HTTP/1.1" 200 -
