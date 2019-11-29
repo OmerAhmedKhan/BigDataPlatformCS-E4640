@@ -1,7 +1,10 @@
 # Design
 
 
-Over all architecture of this assignment module is as follows, please read below for proper understanding(Image is an overview of architecture):
+Over all architecture of this assignment module is as follows, please read below for proper understanding(Image is an overview of whole architecture):
+
+NOTE:
+This image is referenced in some question in which architecture extention was required how ever I design everything at once and then answer each question briefly.
 
 ![Design](Design.png "Design")
 
