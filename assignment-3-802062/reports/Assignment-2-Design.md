@@ -148,7 +148,7 @@ This above data will be insert into CoreDMS with respect to customer data. Batch
 ##### Key logics for the functions used
 
 ```python
-lines = ssc.socketTextStream(sys.argv[1], int(sys.argv[2]))
+lines = ssc.socketTextStream('localhost', <tenant_port>)
 counts = lines.flatMap(lambda line:[line.get('value'), line.get('valueThreshold')])\
                     .filter(lambda word: word[4] > word[5])\
                     .map(lambda word : (word, 1))\
