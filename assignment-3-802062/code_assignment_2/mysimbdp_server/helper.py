@@ -34,7 +34,7 @@ def execute_batch_script(file_name, tenant, window_size):
     client_batch_dir_path = '{}{}'.format(root_path_to_client_batch_script_dir,tenant)
     client_data_dir_path = '{}{}'.format(root_path_to_client_data_dir,tenant)
     sys.path.insert(1, client_batch_dir_path)
-    from clientbatchingestapp import get_alarm_average
+    from clientbatchanalytics import get_alarm_average
     for file in glob.glob('{}/{}.csv'.format(client_data_dir_path, file_name)):
         get_alarm_average(client, tenant, window_size)
 

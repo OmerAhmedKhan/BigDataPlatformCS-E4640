@@ -82,3 +82,18 @@ Parameters:
 ```
 Execute Stream script of client namely clientStreamApp w.r.t to tenant and operation
 
+```
+GET /executeStream/
+Parameters:
+ - tenant_id
+ - operation (To start or stop Consumer)
+```
+
+Execute Stream Analytics script of client namely clientStreamApp w.r.t to tenant
+
+```
+GET /executeStreamAnalytics/
+Parameters:
+ - tenant_id
+ - windowSize (WindowSize for Analytics)
+```

@@ -87,7 +87,7 @@ class StreamAnalytics(Resource):
 api.add_resource(Status, '/status/')
 api.add_resource(BatchAnalyticsManager, '/executeBatch/')
 api.add_resource(StreamIngestManager, '/executeStream/')
-api.add_resource(StreamAnalytics, '/executeStreamAnaytics/')
+api.add_resource(StreamAnalytics, '/executeStreamAnalytics/')
 
 if __name__ == '__main__':
     app.run(debug=True, port=5000, host='0.0.0.0', threaded=True)
