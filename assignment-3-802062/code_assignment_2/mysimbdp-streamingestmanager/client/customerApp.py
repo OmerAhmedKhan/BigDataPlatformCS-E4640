@@ -7,7 +7,7 @@ import logging
 logging.basicConfig(filename='cusomterApp.log',level=logging.INFO, format="%(asctime)s - %(name)s - %(levelname)s - %(message)s")
 
 
-def process_stream_analytics(client, tenant_db):
+def process_stream_analytics(client, tenant):
     sc = SparkContext(appName="StreamingAlarmCount")
     # 2 is the batch interval : 4 seconds
     ssc = StreamingContext(sc, 5)
@@ -20,7 +20,7 @@ def process_stream_analytics(client, tenant_db):
         .reduceByKeyAndWindow(lambda a, b: a + b, 10, 2) # Window of 10 sec interval
 
     try:
-        db = client.tenant_db
+        db = client[tenant]
         db.things.insert_many(counts)
     except Exception as e:
         logging.error("Unable to process request due to {}".format(str(e)))
