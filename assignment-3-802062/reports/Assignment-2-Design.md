@@ -9,6 +9,7 @@ There are two major parts of the design
 - Stream processing
 - Batch processing
 
+### Part 1
 
 #### Dataset
 
@@ -53,15 +54,15 @@ For the data we have we need a "exactly once" gurantee from broker as we dont ne
 There are three types of time associated with streaming process, in which only one (eventTime) is depends on data provided timestamp.
 
 - **Processing time** Processing time refers to the system time of the machine that is executing the respective operation. When a streaming program runs on processing time, all time-based operations (like time windows) will use the system clock of the machines that run the respective operator.
-- **Event time** Event time is the time that each individual event occurred on its producing device. This time is typically embedded within the records before they enter Flink, and that event timestamp can be extracted from each record 
-- **Ingestion time** Ingestion time is the time that events enter Flink. At the source operator each record gets the source’s current time as a timestamp, and time-based operations (like time windows) refer to that timestamp. 
+- **Event time** Event time is the time that each individual event occurred on its producing device. This time is typically embedded within the records before they enter spark, and that event timestamp can be extracted from each record 
+- **Ingestion time** Ingestion time is the time that events enter spark. At the source operator each record gets the source’s current time as a timestamp, and time-based operations (like time windows) refer to that timestamp. 
  
 If data is not provided with a timestamp then we can use wither processing time or ingest time to control the window. Compared to processing time, it is slightly more expensive, but gives more predictable results. Because ingestion time uses stable timestamps (assigned once at the source), different window operations over the records will refer to the same timestamp, whereas in processing time each window operator may assign the record to a different window (based on the local system clock and any transport delay).
 Compared to event time, ingestion time programs cannot handle any out-of-order events or late data, but the programs don’t have to specify how to generate watermarks.
 
 For a current data set we will go for **Event time** as the dataset have **event_time** which comes from the system of customers itself.
 
-Windows split the stream into “buckets” of finite size, over which we can apply computations. For example, with an event-time-based windowing strategy that creates non-overlapping (or tumbling) windows every 5 minutes and has an allowed lateness of 1 min, Flink will create a new window for the interval between 12:00 and 12:05 when the first element with a timestamp that falls into this interval arrives, and it will remove it when the watermark passes the 12:06 timestamp.
+Windows split the stream into “buckets” of finite size, over which we can apply computations. For example, with an event-time-based windowing strategy that creates non-overlapping (or tumbling) windows every 5 minutes and has an allowed lateness of 1 min, spark will create a new window for the interval between 12:00 and 12:05 when the first element with a timestamp that falls into this interval arrives, and it will remove it when the watermark passes the 12:06 timestamp.
 
 We will use tumbling windows for our use case as we need to count number of alarms triggered in certian amount of time to know the rate of alaram from these devices. A tumbling windows assigner assigns each element to a window of a specified window size. Tumbling windows have a fixed size and do not overlap. For example, if you specify a tumbling window with a size of 5 minutes, the current window will be evaluated and a new window will be started every five minutes.
 
@@ -84,15 +85,15 @@ Image on top can provide a clear view of how the architecture looks like, there 
 - **Data Soruce (Producer)** - The data sources for this assignment will be a CSV files which need to be submitted through producer to be stream through myStreamServices to perform analytics on customerApp
 - **Pre-Ingest Broker** - This broker is places between data source and customerAPP. It provide a prallelism from which a each Tenant customerApp will consume messages belongs their own sources and use myStreamService to perform analytics
 - **CustomerApp** - Customer custom scripts which will be procssed through with our myStreamServcie which should follow some constraints on data modles and code paradigm.
-- **myStreamService** - Our stream service will use Apache Flink which have all the methods need to solve this assignement and can provide streama nd batch mechanism
-- **Processed Ingestion Broker** - This broker get all the processed data from flink of different Tenant providing multi tenancy and scalability and sink data into our CoreDMS by using our system core API which will store data in batch format to provide more efficient processing.
+- **myStreamService** - Our stream service will use Apache spark which have all the methods need to solve this assignement and can provide streama nd batch mechanism
+- **Processed Ingestion Broker** - This broker get all the processed data from spark of different Tenant providing multi tenancy and scalability and sink data into our CoreDMS by using our system core API which will store data in batch format to provide more efficient processing.
 - **Analtics Results Broker** - These Message queues will return results processed through our myStreamService and transfer it to customerApp in a scalable manner. 
 - **Batch Process** - This module is use for doing all the batch process with from myStreamServices which come as a trigger event or customer on demand request which will fetch historical data from CoreDMS and do insights on it.
 
 This assignment provide concept of multi tenancy and provide some control to the organziation using our big data platform. Which includes allow client to uplaod their data and custom script using our API to load data inot our CoreDMS
 
 **NOTE:**
-This architecture is highly scalable, the only bottleneck is myStreamService which is based on flink.
+This architecture is highly scalable, the only bottleneck is myStreamService which is based on spark.
 
 
 ### Part 2
@@ -124,7 +125,7 @@ Sample data output for customerApp
 }
 ```
 
-This data can be inserted into flink and then the analytics output be as follows:
+This data can be inserted into spark and then the analytics output be as follows:
 ```json
 {
    'station_id':1161115016,
@@ -167,7 +168,55 @@ counts = lines.flatMap(lambda line:[line.get('value'), line.get('valueThreshold'
 So the system is designed to provide Parallelism which comes up with multi tenancy and using Pub/Sub queue for each customer, the queue will handle and ensure that all messages will get processed and every customer have its own parallel queue which will not hurdle any other customer. More over all methods of myStreamService through spark stream are parallel in nature as they are atomic unit which also make this system parallel.
 The issues occur within my test environement is a latency issue due to high use of resource, which means that the system requires a decent resource to process data.
 
+#### customerstreamapp
 
+The test env is based on my local machine and all the framework are connect over a localhost but on different port. I have used sockets to connect Spark Stream API for python as there is no connector available for AMQP. Spark, rabitMQ are connected on there default ports and socket is connect on 9999 port
+Due to many appplications running in parallel the system resources are deprecated quickly which results in some issues like high latency and delays within the system
+
+All the results are avaliable in a **REPORT** files.
+
+#### Error Handling
+
+Most of my code have error handling in place which publish logs in my logs files which can be access from **LOG** directory. One of the example is as follows:
+
+```
+ConnectionResetError: [Errno 104] Connection reset by peer
+Traceback (most recent call last):
+  File "/home/oak/.virtualenvs/bigdata/lib/python3.6/site-packages/pika/adapters/utils/io_services_utils.py", line 1041, in _on_socket_readable
+    self._consume()
+  File "/home/oak/.virtualenvs/bigdata/lib/python3.6/site-packages/pika/adapters/utils/io_services_utils.py", line 791, in _consume
+    data = self._sigint_safe_recv(self._sock, self._MAX_RECV_BYTES)
+  File "/home/oak/.virtualenvs/bigdata/lib/python3.6/site-packages/pika/adapters/utils/io_services_utils.py", line 79, in retry_sigint_wrap
+    return func(*args, **kwargs)
+  File "/home/oak/.virtualenvs/bigdata/lib/python3.6/site-packages/pika/adapters/utils/io_services_utils.py", line 846, in _sigint_safe_recv
+```
+
+This shows that the rabbitMQ library pikka have lost connection in between and try to reconnect due to error handling. One more example can be seen as follows:
+```commandline
+ERROR:pika.channel:Unexpected frame: <METHOD(['channel_number=1', 'frame_type=1', "method=<Queue.DeclareOk(['consumer_count=1', 'message_count=0', 'queue=abc_queue'])>"])>
+ERROR:pika.adapters.utils.io_services_utils:_AsyncBaseTransport._produce() failed, aborting connection: error=IndexError('pop from an empty deque',); sock=<socket.socket fd=14, family=AddressFamily.AF_INET, type=2049, proto=6, laddr=('127.0.0.1', 41502), raddr=('127.0.0.1', 5672)>; Caller's stack:
+Traceback (most recent call last):
+  File "/home/oak/.virtualenvs/bigdata/lib/python3.6/site-packages/pika/adapters/utils/io_services_utils.py", line 1097, in _on_socket_writable
+    self._produce()
+  File "/home/oak/.virtualenvs/bigdata/lib/python3.6/site-packages/pika/adapters/utils/io_services_utils.py", line 822, in _produce
+    chunk = self._tx_buffers.popleft()
+IndexError: pop from an empty deque
+```
+
+Which shows that the "pop" method was used on empty queue which throw an error but again catch and published in a log file. Similarly most of the information is also published in a log file like:
+```commandline
+2019-11-29 01:41:44,743 - root - INFO - Message published: {"station_id": 1161115016, "datapoint_id": 121, "alarm_id": 308, "event_time": "2017-02-18 18:28:05 UTC", "value": 240.0, "valueThreshold": 240.0, "isActive": false, "storedtime": null}
+2019-11-29 01:41:44,745 - root - INFO - Message published: {"station_id": 1161114050, "datapoint_id": 143, "alarm_id": 312, "event_time": "2017-02-18 18:56:20 UTC", "value": 28.5, "valueThreshold": 28.0, "isActive": true, "storedtime": null}
+2019-11-29 01:41:44,745 - root - INFO - Message published: {"station_id": 1161115040, "datapoint_id": 141, "alarm_id": 312, "event_time": "2017-02-18 18:22:03 UTC", "value": 56.5, "valueThreshold": 56.0, "isActive": true, "storedtime": null}
+2019-11-29 01:41:44,746 - root - INFO - Message published: {"station_id": 1161114008, "datapoint_id": 121, "alarm_id": 308, "event_time": "2017-02-18 18:34:09 UTC", "value": 240.0, "valueThreshold": 240.0, "isActive": false, "storedtime": null}
+2019-11-29 01:41:44,746 - root - INFO - Message published: {"station_id": 1161115040, "datapoint_id": 141, "alarm_id": 312, "event_time": "2017-02-18 18:20:49 UTC", "value": 56.0, "valueThreshold": 56.0, "isActive": false, "storedtime": null}
+```
+
+This shows that the messages are inserted from the data source to our first queue.
+
+Due to error handling the system remain stable and it doesn't effects its performance however, there are no alerts on such critical error which may results in wrong or missed data processing.
+
+### Part 3
 
 #### Data to CoreDMS
 
