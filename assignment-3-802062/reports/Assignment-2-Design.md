@@ -79,6 +79,7 @@ Following are the metircs necessary for this use case:
 
 Image on top can provide a clear view of how the architecture looks like, there different modules of this design which can be explain as follows:
 
+- **mysimbdp** - A main server which is reused from previous assignment, it provide restful API to client/customer to perform operation to our big data platform. All the entry pioint for stream and batch analytics are present here and can be see in README file
 - **CoreDMS** - A cloud based Mongo database which will store all customer information and for this assignment all its processed stream analytics which will/can be use for further insights and on demand bathc processing
 - **Data Soruce (Producer)** - The data sources for this assignment will be a CSV files which need to be submitted through producer to be stream through myStreamServices to perform analytics on customerApp
 - **Pre-Ingest Broker** - This broker is places between data source and customerAPP. It provide a prallelism from which a each Tenant customerApp will consume messages belongs their own sources and use myStreamService to perform analytics
